@@ -101,6 +101,9 @@ th {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#vilnius {
+    border: 1px solid #021a40;
+}
 
 @media screen and (max-width: 768px){
     #splash{
@@ -129,7 +132,7 @@ th {
         height: auto;
     }
     #regions {
-        max-width: 580px;
+        max-width: 360px;
         min-width: 300px;
         width: 100%;
         height: auto;
