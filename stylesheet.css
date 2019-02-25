@@ -1,0 +1,66 @@
+
+
+/*      Background image        */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.3)), url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px; 
+}
+
+h1 {
+    color: #e51414;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px black;
+    
+}
+
+
+
+ol li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#splash {
+    padding: 20px;
+    background-color: #f2ea54;
+    width: 900px;
+    border: 1px none black;
+    text-align: center;
+    margin: 0 auto; 
+    box-shadow: 1px 1px 10px black;
+}
+
+#para1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    
+}
+
+.centeredimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#geolist {
+    padding: 0;
+}
+
+.geop {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
