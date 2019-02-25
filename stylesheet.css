@@ -1,6 +1,6 @@
 
 
-/*      Background image        */
+/*========Background image========*/
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.3)), url("background.jpg");
     background-size: cover;
@@ -9,6 +9,7 @@ body {
     padding: 30px; 
 }
 
+/*========Page headers========*/
 h1 {
     color: #e51414;
     font-family: 'Pacifico', cursive;
@@ -20,8 +21,7 @@ h1 {
     
 }
 
-
-
+/*========Ordered list========*/
 ol li {
     list-style-type: none;
     display: inline-block;
@@ -31,6 +31,7 @@ ol li {
     padding-bottom: 10px;
 }
 
+/*========Main content box========*/
 #splash {
     padding: 20px;
     background-color: #f2ea54;
@@ -41,11 +42,11 @@ ol li {
     box-shadow: 1px 1px 10px black;
 }
 
+
 #para1 {
-    padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
-    
+
 }
 
 .centeredimg {
@@ -64,3 +65,86 @@ ol li {
     padding-right: 20px;
     padding-bottom: 10px;
 }
+
+.citytable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.citytable th, td {
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+
+th {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#histvid{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#maincrest {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#regions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    #splash{
+        max-width: 600px;
+        min-width: 400px;
+        width: auto;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    #histvid{
+        width: 100%;
+        height: auto;
+        min-width: 375px;
+        min-height: 300px;
+    }
+    #vilnius {
+        max-width: 580px;
+        min-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    #maincrest {
+        max-width: 580px;
+        min-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    #regions {
+        max-width: 580px;
+        min-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    .citytable th, td {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row {
+        border: 1px dotted #d2ca3a;
+        border-collapse: collapse;
+    }
+}
+
