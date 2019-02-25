@@ -1,0 +1,155 @@
+/*========Background image========*/
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.3)), url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px; 
+}
+
+/*========Page headers========*/
+h1 {
+    color: #e51414;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px black;
+    
+}
+
+/*========Ordered list========*/
+ol li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/*========Main content box========*/
+#splash {
+    padding: 20px;
+    background-color: #f2ea54;
+    width: 900px;
+    border: 1px none black;
+    text-align: center;
+    margin: 0 auto; 
+    box-shadow: 1px 1px 10px black;
+}
+
+
+#para1 {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.centeredimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#geolist {
+    padding: 0;
+}
+
+.geop {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+/*========Nesting========*/
+.citytable {
+    margin-left: auto;
+    margin-right: auto;
+
+    th, td {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+    }
+
+    th {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*========Inheritance========*/
+%paddingshared {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#histvid{
+    @extend %paddingshared;
+}
+#maincrest {
+    @extend %paddingshared;
+}
+#regions {
+    @extend %paddingshared;
+}
+#vilnius {
+    border: 1px solid #021a40;
+}
+
+/*========SCSS variable========*/
+$mw: 300px;
+
+@media screen and (max-width: 768px){
+    #splash{
+        max-width: 600px;
+        min-width: 400px;
+        width: auto;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    #histvid{
+        width: 100%;
+        height: auto;
+        min-width: 375px;
+        min-height: 300px;
+    }
+    #vilnius {
+        max-width: 580px;
+        min-width: $mw;
+        width: 100%;
+        height: auto;
+    }
+    #maincrest {
+        max-width: 580px;
+        min-width: $mw;
+        width: 100%;
+        height: auto;
+    }
+    #regions {
+        max-width: 360px;
+        min-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    .citytable th, td {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+    .row {
+        border: 1px dotted #d2ca3a;
+        border-collapse: collapse;
+    }
+}
+
