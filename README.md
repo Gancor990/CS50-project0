@@ -17,12 +17,12 @@ Course requirements:
         geography.html         -> ln 20
     
     Table: 
-        facts.html             -> ln 26    
+        facts.html             -> ln 25    
     
     Images:     
         index.html             -> ln 23 
-        geography.html         -> ln 17
-        facts.html             -> ln 59
+        geography.html         -> ln 18
+        facts.html             -> ln 58
 
 [3] one stylesheet
 
@@ -34,6 +34,25 @@ Course requirements:
 
 [5] stylesheet must include at least one mobile-responsible query
 
+    stylesheet.css             -> ln 109
+
 [6] use of Bootstrap 4 on website, at least one component and two columns
 
-[7] use of at least one SCSS variable, one example of SCSS nesting, one use of SCSS inheritance 
+    Boostrap buttons:
+        index.html
+        history.html
+        geography.html
+        facts.html
+
+    Bootstrap grid:
+        facts.html             -> ln 59
+
+[7] use of at least one SCSS variable, one example of SCSS nesting, one use of SCSS inheritance
+
+    stylesheetSASS.scss
+
+    Variable:                  -> ln 110
+    Nesting:                   -> ln 68
+    Inheritance                -> ln 91
+
+[8] Overview: website is an example of HTML / CSS topics covered in Lectures 1 & 2 using the country of Lithuania as a topic.
